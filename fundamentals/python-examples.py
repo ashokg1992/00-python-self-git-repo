@@ -37,6 +37,8 @@ try:
 
 except Exception as e:
   print(f"Error creating EC2 instance: {e}")
+  
+  
 # =========================================================
 
 
