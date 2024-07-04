@@ -1,0 +1,279 @@
+
+
+### ===============================================
+
+- TO interact with k8 , CLIis- kubectl
+- to interact with aws , CLI  is- aws ( aws s3 ls)
+- like this we can interact with  CLIs .
+
+
+- we can also interact with  APIs  to get info.
+-  in normal , by URL just paste in browser, then we get data
+- but in python we can get data same as above by using " requests.get " 
+
+# to talk with any resource, we do following these:
+     - identify the requried module, requets method
+     -  API URL 
+     - data manipulation
+     -print the data 
+
+
+### ===============================================
+-   string
+- group of strings  called  list
+- key:value is called dictionary
+
+
+REAL TIME TASK:
+-----------
+-- talk to github API, nad getting info as and when required
+- 	getting into github and fecthing issues and who crated it  .. this can be done by script
+
+ 
+
+- what are data types ? go to  day-2 doc, 
+     string, numeric(int,float), sequence(list,tuple), mapping, boolean.
+
+Q) why python is dynamically programming?
+    bcz for python , no need interpretor , it automaticlly understand what type of data it is. like if we mention a=10 , no need to declare as int a=10 , it undrsand by itself.
+    - "ashok" - it means for python  is - it is a string
+    - while declaring variables, we do not need to mention to the variable that  what type of  value is assigned to them , bcz it automatically undersand  , that is why it is dynamically programming.
+    in shell : var name string  ="ashok" # we  telling that ashok as string and teliing this to var name
+    in python : name = "ashok" # no need to tell
+
+Q) how you  get only firrst name  in the file whihc has first and sencond names to each person?
+    - by using inbuilt funciotn 
+    string.split(" ")
+
+
+ <!-- FOR PRACTICING INBULIT FUNCTIONS , GO TO DAY-2 EXAMPLES FOLDER -->
+
+
+Q) what is concatanation?
+     to add two values / stirngs is called concatanation
+
+
+Q) how you find number of characters in string or group of string?
+     byusing len  function.
+
+Q)if you want to get nedagative value to positve value then what  fucntion you se?
+     abs  # absolute funciotn
+
+
+Q) what is regular expression ?
+     to ger perticular pattern in the list, we use reg expression insted of using for loop
+    - read day -2 examples FOLDER
+
+
+Q) how does  devops engineer use this regular expression in real time?
+    let say there is huge log file (might be it is applicaiotn log/infra log/ audit log), inside it there are bunchof errorlogs/warinng logs/, by using this reg expression we get those logs.
+    - or we can get those erros by iterateing  file  by using for loop,
+
+
+REAL TIME TASK:
+------------
+-in aws, for each reosurce it has arn (amazon resource name)
+- let day we have arn's  for IAM users, now we get the usernames  from arns. 
+- write python script  to collect arns, then by using  inbuilt fucntions ( string.split) we get data.
+- we get complte json payload, then we convert into dictionary, from dictonay we split and get data as we required
+- see day-2 examples folder.
+
+
+ <!-- in nay progaram : key-words, data types, operators , logical reasoning is imporatntat  -->
+- some of the jeywords in pythons : if,else, try, except..
+- 
+
+- try,except, finally :  are error handling key words 
+
+Q) what are modules  you used in python?
+      boto3
+
+
+REAL TIME TASK IN PYTHON:
+-----------------
+- in org, scripts can be written in python by using aws sdk and cdk, cft, tf
+- write scripts for s3 bucket(  accessing.. etc) 
+- write the script to  crating jira  ticket for the issues
+- to list out issues and pull requests in repository , we write functions for this.
+- written the modules to connecting AWS RESOURCES, GITHUB API, JIRA API, HTTPS REQUEST API.. 
+- FOR THE ABOVE      aws(boto3 mocule ), jira(jira mdoule), github(github module), http (request mdule) used
+
+
+=================================== PYPI:  =================================
+
+ - PYTHON PACKAGE INDEX
+ - PYPI is central repository to store packages like docker hub, whether it can be private or public.
+ - we write packages and stored them in private repository or public
+ -  by using pip , we can download anuthing form PIPY .
+ - pip install boto3
+ - pip install github
+ - pip install jira
+ - somoe packages are : numpy, panda
+ - pip list    # to show all packages that we have in termianal 
+ - functions -> modules -> packages  # this is order  
+ - python get-pip.py     # to install pip  in linux 
+ - py get-pip.py     # to install pip  in windows 
+
+=========================  VIRTUAL ENVIRONMENT =====================================
+
+
+pip install virtualenv 	# to install sepeaate environment  for the different projects in same machine
+python -m  venv project-abc	# -m : mdoule ; venv: virtual env ; by this command , it create folder for this project
+source project-abc/bin/activate 	# to go to this project folder
+pipinstall jira 	# it means it is installed in this project-abc envirionment space folder , not in other folder env space.
+- pip list | grep jira
+- # like this we can install different version of jira in different env space/ project, so that it can not affect any project.
+- deactivate	# to get out of this env space
+
+
+ 
+========================  VIRTUAL ENVIRONMENT =====================================
+
+
+========================  ========================
+- OS  module is use in one case - to read env variables
+- sys  module is used:
+- 
+
+= ============ float division ( //) ====================
+3//2 = 1  # we dont get decimals in this.
+============== - modulus: (%) =================
+- 16 % 13 = 3  in python this is moduls
+-16/13= 1.22
+-16//13 = 1
+-16%13= 3
+
+
+====================================  ================================
+
+-CONDITIONAL HANDLING:
+1.if
+2.else
+3.elif(elseif)
+
+
+====================================  ================================
+
+- list : ["a": "b": "c":]
+
+## ============= real time task =========================
+
+- to print list of all s3 buckets/ebs volumes/ec2 instances  in perticular account .
+
+Q) diff b/n LIST & TUPLE?
+     LIST - mutable
+     tuple- immutable
+  
+     LIST
+     -----------
+          - ONCE  list  is crated, it is resizable
+          - we can add no of users/list of buckets/ec2 instaces
+          - dynamic memory it has bcz data is changes everyitme
+          -["a","b"]
+
+
+
+     TUPLE:
+     -------
+          - ONCE  tuple is crated, it CAN'T be resizable
+          - if we do not want  to add/ delete , then we use this tuple.
+          - if i do not want to add admin user names by unauthorized users, then we use it.
+          - memory is fixed
+          -("a","b")
+
+Q) how to add new element to lisst?
+     - for that variable whihc is assigned to list, add "append" to that varialbe.
+
+
+## ===== slicing =================
+
+- to get data from 0 to x in the list
+- if range is exceeded, then also program is executed
+- 
+a= ["a", "b","c","d","e"]
+print(a[2:4])
+
+
+## =====  SORT  =================
+
+-ARRANGE in alpabectic order
+-
+
+
+Q) in LIST  can we store same or diff typeof data in it?
+     - we can store any type of data (string, int, float)
+
+
+## =================  REAL TIME TASK  ==============================
+
+LIST  ALL FILES IN LIST OF FOLDERS  THAT USER PROVIDED , AND MAX SIZE OF FILE IN THAT FOLDER
+- INPUT:  given path of folder ( /tmp/)
+-OUTPUT: (files in /opt )
+
+Q) we can give inputs to program in the run time, ways?
+          -1.command line arguments
+          - env vars
+          - input method ( it executes at run time)
+
+
+Q) split function?
+     - it can convert data into a list type.
+     - if we give random folders names list, then split convert  that list  into LIST TYPE
+
+Q)    what is OS module?
+     - it interact with OS and give info.
+     - OS.LISTDIR   # IT TELL ALL FILES IN FOLDER
+     - 
+Q) exceptional handling?
+     - insted of  throwing error in program , we can skip  that error and execute reamin program, then weuse exceptional handling.
+     - we use TRY , EXCEPT  blocks for this 
+
+
+### ================== DICTIONARY ====================
+- single dictionary 
+- multiple dictionary : if we want to use multiple dictionary , dictionaries are used in list 
+
+students_info= [                # list 
+    {     # dictionary
+        
+    },
+    {
+          # dictionary
+    }
+]
+
+
+### ========== SETS{ }  =========================
+
+     -- sets are represnting by using symbol : {  } 
+
+###  -- REAL TIME TASK OF SETS: ================
+     --  while creating  s3 buckets, buckets  names are to be identical
+     -- in this case , we use sets, and prevent duplicate names at the time of crating buckets.
+     -- 
+
+### ====================== FILE OPERATIONS =================
+
+    --   REAL TIME TASK  OF FILE OPERATION :
+    ---------------------------------------
+          -- TO UPDATE  server configuation when any metrics met.
+          --to update application properties file, then we  use file operations
+          -- to update any file , we use file operations
+--- file operations:
+          -- 1. read operations
+          --2.   write operations
+
+Q) to open a file , whihc function you ses ?
+     - " with  open ("path", "read/write")
+
+
+------------------------
+-- with open ("/opt/tmp", "r")   # to read mode for a file
+--rules for while doing file operations:
+          --  read file by opening it
+          -- read data and store data to a variable
+          --now enable write mode to  that file to update data
+          -- now write data as our wish
+          --
+
+
