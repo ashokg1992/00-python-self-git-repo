@@ -13,7 +13,7 @@
 # 
 # 
 # 
-# 
+
 # ======================================1-my real time tasks in org======================================= 
 
 
@@ -29,8 +29,6 @@
 - 
 
 
-# =======================  imp points in python while learning ===================================
-- in  shell  curl is do same as request in python
 -
 
 # ============== 1-python-example-scripts =========================
